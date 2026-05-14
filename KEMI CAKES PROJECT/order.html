@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Cake - Kemi Cakes</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar-container"></div>
+  
+  <section class="section" style="padding-top: 100px; min-height: 100vh; display: flex; align-items: center; background: var(--light-cream);">
+    <div class="form-container">
+      <h1 style="text-align: center; color: var(--brown); margin-bottom: 2rem; font-size: 2.5rem;">Order Your Dream Cake</h1>
+      <p style="text-align: center; margin-bottom: 2rem; color: #666;">Fill out the form and we'll contact you within 24 hours</p>
+      
+      <form class="order-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email (optional)</label>
+          <input type="email" id="email" name="email" placeholder="kemicakes@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+256 ..." required>
+        </div>
+        
+        <div class="form-group">
+          <label for="cake-type">Cake Type</label>
+          <select id="cake-type" name="cake-type" required>
+            <option value="">Select a cake type</option>
+            <option value="birthday">Birthday Cake</option>
+            <option value="wedding">Wedding Cake</option>
+            <option value="anniversary">Anniversary Cake</option>
+            <option value="cupcakes">Cupcakes</option>
+            <option value="custom">Custom Design</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Special Instructions</label>
+          <textarea id="message" name="message" rows="4" placeholder="Colors, flavors, design ideas..."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Order Request</button>
+      </form>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <p>📞 Or call us directly: <a href="tel:+256752112179" style="color: var(--brown); font-weight: bold;">+256 752 112 179</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <div id="footer-container"></div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
+
